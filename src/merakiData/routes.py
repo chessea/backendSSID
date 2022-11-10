@@ -19,7 +19,7 @@ def updateJardinesPass( ):
     return jsonify ( { "ok": data}),201
 
 
-@app.route('/api', methods=['POST'])
+@app.route('/meraki/api', methods=['POST'])
 def getOrg():
     req = request.get_json()
     respuesta= Api.getNameOrganization( req['api-key'])
@@ -27,7 +27,7 @@ def getOrg():
     if respuesta == '':
         return jsonify({ 'error': 'Api no encontrada '  }), 400 
     else:
-        return jsonify({  'api-key':respuesta }),200 
+        return jsonify({ 'organizacion':respuesta }),200 
 
         
 
