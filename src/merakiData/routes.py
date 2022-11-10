@@ -5,7 +5,7 @@ from dotenv import dotenv_values
 from merakiData.FuncionesMeraki import FuncionesMeraki
 from merakiData.Api import Api
 
-#
+
 @app.route('/meraki', methods=['GET'])
 def getJardinesConfig(): 
     return jsonify ( { "networks": FuncionesMeraki.getAllNetworks()}),200
@@ -31,8 +31,3 @@ def getOrg():
 
         
 
-<<<<<<< HEAD
-=======
-   
-    return jsonify ( { "ok": data}),201
->>>>>>> af9b157895c973db52e45ef08b1515eaf52cbf69
