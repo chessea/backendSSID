@@ -4,7 +4,7 @@ import meraki as mrk
 from dotenv import dotenv_values
 from merakiData.FuncionesMeraki import FuncionesMeraki
 
-
+#
 @app.route('/meraki', methods=['GET'])
 def getJardinesConfig():
    
