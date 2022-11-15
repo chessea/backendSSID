@@ -27,7 +27,7 @@ def getOrg():
     if respuesta == '':
         return jsonify({ 'error': 'Api no encontrada '  }), 400 
     else:
-        return jsonify({ 'organizacion':respuesta }),200 
+        return jsonify({ 'organizacion':respuesta, 'apiKey': req['api-key']}),200 
 
         
 
