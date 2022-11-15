@@ -27,7 +27,7 @@ class Api:
             data= response.json()
             for datos in data:
                 listaOrganizacion.append({
-                    "nombreOrganizacion": datos['name']
+                    "label": datos['name']
                 })
       
             return   listaOrganizacion
